@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Style Guide</title>
+  
+    <!-- Google Fonts: Inter & Fira Code -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  
+    <!-- Link Your CSS -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Style Guide</h1>
+      </div>
+    </header>
+    <main class="styleguide">
+      <!-- Brand -->
+      <section id="brand">
+        <h2>Brand Identity</h2>
+
+        <!-- Logo -->
+        <h3>Logo & Icon</h3>
+        <div class="brand-assets">
+          <img src="brand-assets/styleguide-logo.svg" width="150" height="50">
+          <img src="brand-assets/styleguide-icon.svg" width="50" height="50">
+          <img src="brand-assets/styleguide-logo-inverse.svg" width="150" height="50">
+          <img src="brand-assets/styleguide-icon-inverse.svg" width="50" height="50">
+        </div>
+        <!-- Brand Font -->
+
+        <div class="brand-fonts">
+          <h3>Fonts</h3>
+          <div class="font-preview">
+            <p style="font-family: var(--font-brand); font-size: 1.25rem;">
+              This text uses the <strong>brand font</strong>: <code>var(--font-brand)</code>
+            </p>
+            <p style="font-family: var(--font-mono); font-size: 1.25rem;">
+              This text uses the <strong>monospaced font</strong>: <code>var(--font-mono)</code>
+            </p>
+          </div>
+        </div>
+      
+        <h3>Brand Colors</h3>
+        <div class="brand-colors">
+          <div class="color-swatch" style="--swatch-color: var(--color-primary-10)">
+            <span class="label">Primary 10</span>
+            <code>--color-primary-10</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-primary-20)">
+            <span class="label">Primary 20</span>
+            <code>--color-primary-20</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-primary-30)">
+            <span class="label">Primary 30</span>
+            <code>--color-primary-30</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-primary-40)">
+            <span class="label">Primary 40</span>
+            <code>--color-primary-40</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-primary-50)">
+            <span class="label">Primary 50</span>
+            <code>--color-primary-50</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-primary-60)">
+            <span class="label">Primary 60</span>
+            <code>--color-primary-60</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-primary-70)">
+            <span class="label">Primary 70</span>
+            <code>--color-primary-70</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-primary-80)">
+            <span class="label">Primary 80</span>
+            <code>--color-primary-80</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-primary-90)">
+            <span class="label">Primary 90</span>
+            <code>--color-primary-90</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-primary-100)">
+            <span class="label">Primary 100</span>
+            <code>--color-primary-100</code>
+          </div>
+        </div>
+      
+        <h3>Neutral Colors</h3>
+        <div class="brand-colors">
+          <div class="color-swatch" style="--swatch-color: var(--color-neutral-10)">
+            <span class="label">Neutral 10</span>
+            <code>--color-neutral-10</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-neutral-20)">
+            <span class="label">Neutral 20</span>
+            <code>--color-neutral-20</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-neutral-30)">
+            <span class="label">Neutral 30</span>
+            <code>--color-neutral-30</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-neutral-40)">
+            <span class="label">Neutral 40</span>
+            <code>--color-neutral-40</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-neutral-50)">
+            <span class="label">Neutral 50</span>
+            <code>--color-neutral-50</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-neutral-60)">
+            <span class="label">Neutral 60</span>
+            <code>--color-neutral-60</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-neutral-70)">
+            <span class="label">Neutral 70</span>
+            <code>--color-neutral-70</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-neutral-80)">
+            <span class="label">Neutral 80</span>
+            <code>--color-neutral-80</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-neutral-90)">
+            <span class="label">Neutral 90</span>
+            <code>--color-neutral-90</code>
+          </div>
+          <div class="color-swatch" style="--swatch-color: var(--color-neutral-100)">
+            <span class="label">Neutral 100</span>
+            <code>--color-neutral-100</code>
+          </div>
+        </div>
+      </section>    
+
+      <!-- Typography -->
+      <section id="typography">
+        <h2>Typography</h2>
+        <p>
+          This is a paragraph of text designed to show how longer text wraps within a container.
+          It includes multiple lines to simulate real-world content like blog posts, product
+          descriptions, or documentation. The goal is to test line height, spacing, and font readability
+          across different viewports.
+        </p>
+        <p>
+          Another paragraph follows to ensure consistent rhythm and spacing. It’s important that
+          typographic styles maintain readability even when the content stretches across the full width
+          of the page.
+        </p>
+
+        <h1>This is a level-one heading used for page titles</h1>
+        <h2>This is a level-two heading for main sections</h2>
+        <h3>This is a level-three heading for subsections</h3>
+        <h4>This is a level-four heading for smaller titles</h4>
+        <h5>This is a level-five heading</h5>
+        <h6>This is a level-six heading</h6>
+
+        <ul>
+          <li>Unordered list item one</li>
+          <li>Unordered list item two</li>
+        </ul>
+        <ol>
+          <li>Ordered list item one</li>
+          <li>Ordered list item two</li>
+        </ol>
+      </section>
+
+      <!-- Buttons -->
+      <section id="buttons">
+        <h2>Buttons</h2>
+        <button>Default Button</button>
+        <button class="secondary">Secondary Button</button>
+        <button disabled>Disabled Button</button>
+      </section>
+
+      <!-- Forms -->
+      <section id="forms">
+        <h2>Form Elements</h2>
+        <form>
+          <label for="name">Text Input</label>
+          <input type="text" id="name" placeholder="Enter your name" />
+
+          <label for="email">Email Input</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+
+          <label for="date">Date Input</label>
+          <input type="date" id="date" />
+
+          <label for="color">Color Picker</label>
+          <input type="color" id="color" />
+
+          <label for="file">File Upload</label>
+          <input type="file" id="file" />
+
+          <label for="message">Textarea</label>
+          <textarea id="message" placeholder="Your message"></textarea>
+
+          <label><input type="checkbox" /> Checkbox option</label>
+          <label><input type="radio" name="option" /> Radio option 1</label>
+          <label><input type="radio" name="option" /> Radio option 2</label>
+
+          <label for="select">Select</label>
+          <select id="select">
+            <option>Option 1</option>
+            <option>Option 2</option>
+          </select>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <!-- Links -->
+      <section id="links">
+        <h2>Links</h2>
+        <p>
+          This is a <a href="#">regular link</a> inside a paragraph. It should stand out clearly,
+          be easy to identify, and have an accessible hover/focus state.
+        </p>
+      </section>
+
+      <section id="code-blocks">
+        <h2>Code Blocks</h2>
+      
+        <pre><code>
+      /* Example CSS */
+      .card {
+        background: var(--color-surface);
+        border-radius: 12px;
+        padding: var(--space-md);
+      }
+        </code></pre>
+      
+      </section>
+
+      <!-- Components -->
+      <section id="components">
+        <h2>Components</h2>
+
+        <article class="card">
+          <h3 class="card-heading">Simple Card</h3>
+          <p>This is a basic card component. It might be used for product summaries, announcements, or similar blocks.</p>
+          <div class="card-actions">
+            <button>Call to Action</button>
+          </div>
+        </article>
+
+        <article class="card complex">
+          <img src="images/banyan-fig.jpg" alt="Example card image" />
+          <div class="card-header">
+            <h3 class="card-heading">Complex Card Title</h3>
+            <div class="card-price">EUR 12,50</div>
+          </div>
+          <div class="card-body">
+            <ul class="tags">
+              <li class="tag">Tag one</li>
+              <li class="tag">Tag two</li>
+              <li class="tag">Tag three</li>
+            </ul>
+            <p>
+              This card includes an image, complex text content, and multiple actions.
+              Use this to test spacing, layout alignment, and responsiveness within card-like components.
+            </p>
+            <div class="card-actions">
+              <button class="secondary">Learn More</button>
+              <button>Buy Now</button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="faq">
+        <h2>FAQ</h2>
+      
+        <details>
+          <summary>What is this style guide for?</summary>
+          <p>This style guide helps keep design and development consistent across projects by documenting reusable design elements and styles.</p>
+        </details>
+      
+        <details>
+          <summary>Can I customize the colors?</summary>
+          <p>Yes! All colors are defined using CSS custom properties, making them easy to override or theme.</p>
+        </details>
+      
+        <details>
+          <summary>Where can I find the source code?</summary>
+          <p>The style guide is built as a single HTML/CSS page and can be found at <a href="https://codepen.io/Kriesse/pen/Byaryzo">codepen.io/Kriesse/pen/Byaryzo</a>.</p>
+        </details>
+      </section>
+      
+      <section id="modal-example">
+        <h2>Modal Dialog</h2>
+        <p>This modal uses the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement">HTML dialog element</a>.</p>
+
+        <button id="open-dialog">Open Dialog</button>
+      
+        <dialog id="sample-dialog">
+          <form method="dialog">
+            <h3>Modal Title</h3>
+            <p>This is a native HTML dialog element. It’s great for simple UI dialogs and comes with great acessibility.</p>
+            <ul>
+              <li>When dialog is open, user can not interact with the rest of the page</li>
+              <li>Positioning is done natively. The dialog always shows up in the center. Scroll position of the page is not affected.</li>
+              <li>No more div is needed to create the overlay. The dialog comes with a <code>::backdrop</code> pseudo-element. </li>
+              <li>It comes with good default styles. Even if there is no CSS for some reason, it will look like a modal dialog with a backdrop.</li>
+            </ul>
+            <menu>
+              <button class="secondary">Cancel</button>
+              <button>Confirm</button>
+            </menu>
+          </form>
+        </dialog>
+      </section>
+    
+    </main>
+
+    <script>
+      const dialog = document.getElementById('sample-dialog');
+      const openBtn = document.getElementById('open-dialog');
+    
+      openBtn.addEventListener('click', () => {
+        dialog.showModal();
+      });
+    </script>
+  </body>
+</html>
