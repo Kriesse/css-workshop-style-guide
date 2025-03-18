@@ -1,2 +1,2 @@
 # css-workshop-style-guide
-Boilerplate for a simple static styleguide
+Boilerplate for a simple static style guide
