@@ -1,0 +1,59 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Opinionated: Remove all margins */
+/* * {
+  margin: 0
+} */
+
+/* A more readable default line-height */
+body {
+  line-height: 1.5;
+}
+
+/* Make form elements use the same font */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Avoid text overflow */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* Balance text wrapping on paragraphs */
+p, li {
+  text-wrap: pretty;
+}
+
+/* Better defaults for media elements */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* set up landmark elements as containers */
+header,
+main,
+footer,
+section,
+article {
+  container-type: inline-size;
+}
